@@ -16,13 +16,17 @@ bob/
 ├── assets/
 │   └── design-image.png   # Dropped design image
 ├── projects/
-│   └── bob/               # Apache httpd webpage project
-│       ├── Dockerfile
-│       ├── README.md
-│       ├── index.html
-│       ├── test_index.py
-│       └── assets/
-│           └── bob-logo.png
+│   ├── bob/               # Apache httpd webpage project
+│   │   ├── Dockerfile
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   ├── test_index.py
+│   │   └── assets/
+│   │       └── bob-logo.png
+│   ├── openshift/         # OpenShift project
+│   │   └── README.md
+│   └── fusion/            # IBM Fusion on-prem project
+│       └── README.md
 └── aec/                   # Arrow Experience Center documentation
     ├── README.md          # Introduction to the Arrow Experience Center
     └── project-process-governance.md  # Arrow EMEA AI & Platform CoE process & governance
@@ -54,6 +58,8 @@ To add a new project, create a new folder under `projects/`:
 ```
 projects/
 ├── bob/                   # existing project
+├── openshift/             # OpenShift project
+├── fusion/                # IBM Fusion on-prem project
 └── <new-project>/         # your next project
     ├── Dockerfile
     ├── index.html
