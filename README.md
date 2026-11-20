@@ -15,14 +15,17 @@ bob/
 ├── README.md              # This file — repo overview
 ├── assets/
 │   └── design-image.png   # Dropped design image
-└── projects/
-    └── bob/               # Apache httpd webpage project
-        ├── Dockerfile
-        ├── README.md
-        ├── index.html
-        ├── test_index.py
-        └── assets/
-            └── bob-logo.png
+├── projects/
+│   └── bob/               # Apache httpd webpage project
+│       ├── Dockerfile
+│       ├── README.md
+│       ├── index.html
+│       ├── test_index.py
+│       └── assets/
+│           └── bob-logo.png
+└── aec/                   # Arrow Experience Center documentation
+    ├── README.md          # Introduction to the Arrow Experience Center
+    └── project-process-governance.md  # Arrow EMEA AI & Platform CoE process & governance
 ```
 
 ## Bob project
@@ -59,6 +62,13 @@ projects/
 ```
 
 Each project is independent and self-contained. All are created with Bob.
+
+## Arrow Experience Center (aec/)
+
+The [`aec/`](aec/) folder contains technical and operational information about the Arrow Experience Center, providing context for IBM Bob when working on AEC-related tasks.
+
+- [`README.md`](aec/README.md) — Introduction to the Arrow Experience Center (EMEA Stockholm / North America Atlanta)
+- [`project-process-governance.md`](aec/project-process-governance.md) — Arrow EMEA AI & Platform CoE project request, approval, and lifecycle process
 
 ## About
 
