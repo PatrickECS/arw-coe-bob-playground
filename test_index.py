@@ -39,6 +39,11 @@ class TestIndexHtml(unittest.TestCase):
             self.html,
         )
 
+    def test_logo_present(self):
+        self.assertIn('assets/bob-logo.png', self.html)
+        self.assertIn('alt="Bob logo"', self.html)
+        self.assertTrue(os.path.isfile(os.path.join(os.path.dirname(__file__), "assets", "bob-logo.png")))
+
     def test_badges_present(self):
         for badge in [
             "Apache httpd",

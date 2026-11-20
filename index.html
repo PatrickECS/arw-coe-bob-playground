@@ -22,10 +22,22 @@
             border-bottom: 1px solid #e5e7eb;
             padding-bottom: 24px;
             margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .logo {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+        }
+        .brand {
+            display: flex;
+            flex-direction: column;
         }
         h1 {
             font-size: 24px;
-            margin: 0 0 8px 0;
+            margin: 0 0 4px 0;
             font-weight: 600;
         }
         .subtitle {
@@ -75,8 +87,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>Bob</h1>
-            <p class="subtitle">Apache httpd container · IBM Fusion on-prem · Arrow Experience Center</p>
+            <img src="assets/bob-logo.png" alt="Bob logo" class="logo">
+            <div class="brand">
+                <h1>Bob</h1>
+                <p class="subtitle">Apache httpd container · IBM Fusion on-prem · Arrow Experience Center</p>
+            </div>
         </header>
 
         <div class="section">
